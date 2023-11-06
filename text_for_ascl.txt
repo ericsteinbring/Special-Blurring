@@ -1,0 +1,5 @@
+Special Blurring
+
+Special blurring compares a model of quantum-foam-induced blurring with the full dataset of gamma-ray burst localizations available from the NASA High Energy Astrophysics Science Research Archive, as of 1 November 2022. This includes GRB221009A, which was especially bright, and detected in extremely high energy TeV gamma-rays. An upper limit of the parameter alpha (giving the maximal strength of quantum blurring) can be entered, which is scaled in the model of blurring called "Phi", and plotted against the observations.  The default settings produce the figures shown in the referenced paper.
+
+Referenced paper: Steinbring, E., 2023, "Holographic Quantum-Foam Blurring is Consistent with Observations of Gamma-Ray Burst GRB221009A", Galaxies, submitted

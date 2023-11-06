@@ -1,0 +1,34 @@
+Special Blurring
+
+Eric Steinbring, NRC/HAA
+1 November 2023
+
+This is the IDL code labelled blurring_special, which calculates the quantum-foam induced blurring - called Phi - for a given value of alpha, and compares that to the available gamma-ray burst localization data for the special case of GRB221009A.  All data from the Fermi and TeVCat databases are included in associated text files, as of 1 November 2022.  For completeness with earlier analysis (and earlier versions of this code) several additional, vestigial datafiles and IDL PRO codes are included in the complete zipfile. The author hopes the code annotations are sufficient to understand these.  But no warranty is implied in your ability to run this code, although free use is perfectly fine, provided proper acknowledgement is made.  If you do make use of these codes, please cite the following paper:
+
+Steinbring, E., 2023, "Holographic Quantum-Foam Blurring is Consistent with Observations of GRB221009A", Galaxies, submitted
+
+All code and data is contained in a gzipped tarfile, which was generated with the command:
+>tar -zcvf blurring_special.tar.gz *
+
+To run it:
+
+Download all files from GitHub, at https://github.com/ericsteinbring, contained there as a gzipped tarfile.
+
+Untar in your local directory:
+> tar -xzvf blurring_special.tar.gz
+
+Which unpacks the code itself, called "blurring_special.pro", all its attendent subroutines, and all data tables (as text files) captured from the various archives; where necessary these are concatenated (as they capture them as of certain dates) by the code.
+
+Ensure you have the NASA IDL astronomy libraries installed. See http://idlastro.gsfc.nasa.gov/.
+
+Launch IDL.
+
+All parameters for the code are included in the top-level comments.  Most of these need not be touched, for example fundamental constants, although the choice of alpha is set up so that a lower value is chosen, and the equations are scaled from this.  The variables called horizon, theta, resolution, and seeing are self-explanatory, and also directly match the labels used in the paper.
+
+There are two further sections that control the data-handling and the output plots.  It is possible to trim off some outlier datapoints, although the default is to leave them in, and there are four choices for the output plots which are related to the regions of interest, in energy: for example, "wide" is all data from TeV to the optical/near-infrared, "xray" is restricted to x-rays, etc.  Each of these has a separate listing below, which allows some tweaks to the labelling and plotting choices made for those. The default setups should match exactly what is shown in the above paper.
+
+>.compile blurring_special
+
+>blurring_special
+
+The default output is to show all of the data in the "wide" format, which is Figure 1 from the above paper.

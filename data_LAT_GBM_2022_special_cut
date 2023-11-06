@@ -1,0 +1,11 @@
+
+
+Results from heasarc_fermilgrb: Fermi LAT Second Gamma-Ray Burst Catalog
+Coordinate system:  Equatorial
+|name        |error_radius|redshift|theta   |zenith  |ext_emission_max_ene|
+|GRB220101215|      0.4700| 4.61800| 17.0075| 15.6086|             1200.00|
+
+Results from heasarc_fermigbrst: Fermi GBM Burst Catalog
+Coordinate system:  Equatorial
+|name        |t90     |flnc_band_epeak|error_radius|pflx_comp_epeak|pflx_band_epeak|flnc_comp_epeak|
+|GRB220101215| 128.259|               |      0.0006|               |               |               |
